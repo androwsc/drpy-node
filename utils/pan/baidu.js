@@ -21,7 +21,7 @@ class BaiduHandler {
      */
     constructor() {
         // 初始化百度云盘处理类
-        this._cookie = ENV.get('baidu_cookie') || 'BDUSS=mxLSEl5c21MY0ZmYUs5YXIxYXF2bThYZW5paGUwQldRdkNVSTAzRlJGU1lBOVZwRVFBQUFBJCQAAAAAAAAAAAEAAAD8Xhg0YW5kcm93c2Nsb3ZlAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJh2rWmYdq1pQ;STOKEN=dfcc3bf99a7a6dc350c7d1861a3e56f49dfa5970b57428468a6ff923e17f4acc;BDCLND=7TmztnEWwakscn%2FoMHVzTUcDwC0IKOTT0V3x2DmZnt0%3D'; // 百度网盘Cookie
+        this._cookie = ENV.get('baidu_cookie') || ''; // 百度网盘Cookie
         this.regex = /https:\/\/pan\.baidu\.com\/s\/([^\\|#/]+)/; // 分享链接正则表达式
         // 默认请求头配置
         this.baseHeader = {
